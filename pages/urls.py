@@ -2,5 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('','views.home',name="home") #home function in views.py not yet created
+    path('',views.home,name="home"),
 ]
