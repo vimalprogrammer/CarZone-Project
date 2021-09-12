@@ -11,3 +11,6 @@ class Team(models.Model):
     twitter = models.URLField(max_length=100)
     google_plus = models.URLField(max_length=100)
     created_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.first_name #returns the first name of the team member in the admin page
